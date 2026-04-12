@@ -168,9 +168,16 @@ class beeline_card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      borderOnForeground: true,
-      shadowColor: Colors.yellow,
-      child: Center(
+      margin: EdgeInsets.all(20),
+      shape: RoundedRectangleBorder(
+        side: BorderSide(
+          color: Colors.yellow, 
+          width: 2,     
+        ),
+        borderRadius: BorderRadiusGeometry.circular(12),
+        
+      ),
+        child: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
